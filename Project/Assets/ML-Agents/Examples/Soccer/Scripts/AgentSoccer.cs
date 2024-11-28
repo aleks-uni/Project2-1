@@ -22,6 +22,7 @@ public class AgentSoccer : Agent
     // * opposing player
     private RayPerceptionSensorComponent3D raySensor;
     private HearingSensor hearingSensor;
+    private MemorySensor MemorySensor;
     public enum Position
     {
         Striker,
@@ -120,6 +121,12 @@ public class AgentSoccer : Agent
         {
             Debug.LogError("HearingSensor component not found on the agent.");
         }
+
+        memorySensor = GetComponent<HearingSensor>();
+        if (memorySensor == null)
+        {
+            Debug.LogError("MemorySensor component not found on the agent.");
+        }
     }
 
     public void MoveAgent(ActionSegment<int> act)
@@ -206,6 +213,7 @@ public class AgentSoccer : Agent
         }
     }
 
+    //TO DO somehow add visual observations to memory
     public override void CollectObservations(VectorSensor sensor)
     {
         if (sensor == null)
@@ -220,6 +228,7 @@ public class AgentSoccer : Agent
         {
             Debug.Log("hear collection called");
             List<Vector3> positions = hearingSensor.GetObjectPositions();
+            memorySensor.AddMemory();
             foreach (Vector3 position in positions)
             {
                 Vector3 relativePosition = position - transform.position;
@@ -236,6 +245,12 @@ public class AgentSoccer : Agent
                 sensor.AddObservation(0f); // y
                 sensor.AddObservation(0f); // z
             }
+        }
+
+        if (memorySensor != null)
+        {
+            List<List<Vector3>> memories = memorySensor.GetMemories();
+            //TO DO add observations to the agent
         }
     }
 

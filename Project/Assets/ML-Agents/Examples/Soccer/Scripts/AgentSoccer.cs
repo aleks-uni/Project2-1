@@ -22,7 +22,7 @@ public class AgentSoccer : Agent
     // * opposing player
     private RayPerceptionSensorComponent3D raySensor;
     private HearingSensor hearingSensor;
-    private MemorySensor MemorySensor;
+    private MemorySensor memorySensor;
     public enum Position
     {
         Striker,
@@ -122,7 +122,7 @@ public class AgentSoccer : Agent
             Debug.LogError("HearingSensor component not found on the agent.");
         }
 
-        memorySensor = GetComponent<HearingSensor>();
+        memorySensor = GetComponent<MemorySensor>();
         if (memorySensor == null)
         {
             Debug.LogError("MemorySensor component not found on the agent.");
@@ -228,7 +228,7 @@ public class AgentSoccer : Agent
         {
             Debug.Log("hear collection called");
             List<Vector3> positions = hearingSensor.GetObjectPositions();
-            memorySensor.AddMemory();
+            memorySensor.AddMemory(positions);
             foreach (Vector3 position in positions)
             {
                 Vector3 relativePosition = position - transform.position;

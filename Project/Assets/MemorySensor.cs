@@ -6,7 +6,7 @@ public class MemorySensor : MonoBehaviour
 {
     public int memorySize = 10; // Number of memories stored
     public LayerMask detectableLayers; // Layers to detect (e.g., ball, players, etc.)
-    private List<List<Vector3>> memories = new List<List<Vector3>>;
+    private List<List<Vector3>> memories = new List<List<Vector3>>();
     
     void Awake()
     {
@@ -26,7 +26,7 @@ public class MemorySensor : MonoBehaviour
         memories.Add(obsVector);
     }
 
-    public List<Vector3> GetMemories()
+    public List<List<Vector3>> GetMemories()
     {
         return memories;
     }

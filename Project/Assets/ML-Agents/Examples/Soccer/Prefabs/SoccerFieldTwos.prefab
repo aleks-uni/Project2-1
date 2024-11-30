@@ -2158,6 +2158,7 @@ GameObject:
   - component: {fileID: 9152743230243588598}
   - component: {fileID: 798330825103180240}
   - component: {fileID: 7930633061883963344}
+  - component: {fileID: 2798557956572276910}
   m_Layer: 0
   m_Name: PurpleStriker
   m_TagString: purpleAgent
@@ -2322,11 +2323,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d22decec9a9dae46ac069f815f9a39c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearingRadius: 2
+  hearingRadius: 7
   detectableLayers:
     serializedVersion: 2
     m_Bits: 307
   maxObjects: 5
+  minMovementThreshold: 1
+--- !u!114 &2798557956572276910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095606497496374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc9167b77c4e9e4aaba620968e9d65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memorySize: 10
+  detectableLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1101518129530804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2426,6 +2444,7 @@ GameObject:
   - component: {fileID: 404683423509059512}
   - component: {fileID: 8557426429796011212}
   - component: {fileID: 4481430985234346255}
+  - component: {fileID: 6784690090644228567}
   m_Layer: 0
   m_Name: BlueStriker
   m_TagString: blueAgent
@@ -2590,11 +2609,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d22decec9a9dae46ac069f815f9a39c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearingRadius: 2
+  hearingRadius: 7
   detectableLayers:
     serializedVersion: 2
     m_Bits: 307
   maxObjects: 5
+  minMovementThreshold: 1
+--- !u!114 &6784690090644228567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131626411948014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc9167b77c4e9e4aaba620968e9d65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memorySize: 10
+  detectableLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1141134673700168
 GameObject:
   m_ObjectHideFlags: 0
@@ -4426,6 +4462,7 @@ GameObject:
   - component: {fileID: 8734522883866558980}
   - component: {fileID: 6283479335904612434}
   - component: {fileID: 6248776599067862356}
+  - component: {fileID: 778060779969223807}
   m_Layer: 0
   m_Name: PurpleStriker (1)
   m_TagString: purpleAgent
@@ -4590,11 +4627,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d22decec9a9dae46ac069f815f9a39c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearingRadius: 2
+  hearingRadius: 7
   detectableLayers:
     serializedVersion: 2
     m_Bits: 307
   maxObjects: 5
+  minMovementThreshold: 1
+--- !u!114 &778060779969223807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6257467487437560250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc9167b77c4e9e4aaba620968e9d65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memorySize: 10
+  detectableLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &6442519122303792292
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,6 +5142,7 @@ GameObject:
   - component: {fileID: 1018414316889932458}
   - component: {fileID: 6939753220642424022}
   - component: {fileID: 6060139588275947670}
+  - component: {fileID: 178309517709597387}
   m_Layer: 0
   m_Name: BlueStriker (1)
   m_TagString: blueAgent
@@ -5252,11 +5307,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d22decec9a9dae46ac069f815f9a39c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearingRadius: 2
+  hearingRadius: 7
   detectableLayers:
     serializedVersion: 2
     m_Bits: 307
   maxObjects: 5
+  minMovementThreshold: 1
+--- !u!114 &178309517709597387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8360301818957399454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc9167b77c4e9e4aaba620968e9d65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memorySize: 10
+  detectableLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8673569163220857793
 GameObject:
   m_ObjectHideFlags: 0

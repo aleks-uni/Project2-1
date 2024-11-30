@@ -417,6 +417,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114734187185382186, guid: 54f3340298537426e96a6cc530e2d5d8,
+        type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 217286280874173272, guid: 54f3340298537426e96a6cc530e2d5d8,
         type: 3}
       propertyPath: m_RayLength
@@ -480,7 +485,7 @@ PrefabInstance:
     - target: {fileID: 7930633061883963344, guid: 54f3340298537426e96a6cc530e2d5d8,
         type: 3}
       propertyPath: hearingRadius
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9093959320940577603, guid: 54f3340298537426e96a6cc530e2d5d8,
         type: 3}
